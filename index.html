@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صميدة - ملابس أطفال</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cocoa: '#3B2925',
+                        cream: '#FFF3D6', 
+                        blue: '#1689D8',
+                        yellow: '#FFC928',
+                        green: '#4E8B32',
+                        pink: '#F45B72',
+                        orange: '#F59A23',
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #FFF3D6; color: #3B2925; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Announcement Bar -->
+    <div class="bg-blue text-white text-center py-2 text-sm font-bold">
+        توصيل سريع لجميع المحافظات 🚚
+    </div>
+
+   <!-- Navigation -->
+    <nav class="flex items-center justify-between px-4 md:px-8 py-4 bg-cream shadow-sm">
+        
+        <!-- Logo Section: Replaced old text with the new transparent logo -->
+        <div class="flex items-center">
+            <a href="#">
+                <img src="./assets/Logo/Gemini_Generated_Image_z9clthz9clthz9cl-removebg-preview.png" alt="صميدة KIDS WEAR Logo" class="h-14 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300">
+            </a>
+        </div>
+        
+        <!-- Links -->
+        <ul class="hidden md:flex gap-6 font-bold text-lg">
+            <li class="hover:text-blue cursor-pointer">الشتاء</li>
+            <li class="hover:text-green cursor-pointer">ملابس الخروج</li>
+            <li class="hover:text-pink cursor-pointer">بيجامات</li>
+            <li class="hover:text-orange cursor-pointer">الخريف</li>
+        </ul>
+        
+        <!-- Login Button -->
+        <button class="bg-yellow text-cocoa px-6 py-2 rounded-full font-bold shadow-md hover:bg-orange transition">تسجيل الدخول</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative w-full border-b-4 border-blue flex items-center justify-center overflow-hidden bg-cream">
+        
+        <!-- الصورة الخلفية (يجب أن تكون النسخة النظيفة بدون أزرار) -->
+        <img src="./assets/Hero/Gemini_Generated_Image_utync6utync6utyn.jpg" class="w-full h-auto block" alt="Back to School">
+        
+        <!-- المربع النصي (البوب أب) -->
+        <div id="heroBox" onclick="this.style.display='none'" class="absolute m-auto h-fit text-center bg-cream/95 p-5 md:p-8 rounded-2xl shadow-2xl backdrop-blur-md w-[90%] max-w-md md:max-w-lg border-2 border-cocoa cursor-pointer hover:scale-[1.02] transition-transform group z-10">
+            
+            <span class="absolute top-2 left-4 text-cocoa/60 font-bold text-xl group-hover:text-red-600 transition-colors">✕</span>
+            
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-2 md:mb-4 text-blue">لبسهم للمغامرة</h2>
+            <p class="text-sm md:text-xl font-bold mb-4 md:mb-6">تشكيلة الشتاء والعودة للمدارس الجديدة وصلت. ملابس مريحة وعملية لكل الأوقات.</p>
+            
+            <!-- زر البوب أب الذي ينقل لقسم المنتجات -->
+            <a href="#products" onclick="event.stopPropagation(); document.getElementById('heroBox').style.display='none';" class="inline-block bg-yellow text-cocoa px-6 py-2 md:px-10 md:py-3 rounded-full text-base md:text-xl font-extrabold hover:bg-orange hover:scale-105 active:scale-95 transition-all shadow-lg border-2 border-cocoa">
+                تسوقي الآن
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us / كل طفل يستحق الراحة -->
+    <section id="about_us" class="max-w-4xl mx-auto text-center py-16 px-4">
+        <h3 class="text-3xl font-bold text-blue mb-4">كل طفل يستحق الراحة</h3>
+        <p class="text-lg font-semibold text-cocoa/80 leading-relaxed">
+            نحن نؤمن أن نوبات الغضب والبكاء المستمر تبدأ غالباً من ملابس مزعجة، خيوط خشنة، أو ياقات ضيقة. في "صميدة"، مهمتنا بسيطة: إيقاف هذا البكاء قبل أن يبدأ. نحن نصمم ملابس ناعمة على بشرة طفلك، سهلة في اللبس والخلع، ومصنوعة لتتحمل أقوى أوقات اللعب دون أن تقيد حركتهم. صنعناها عشان تتحرك.. مش عشان تقعد في الدولاب.
+        </p>
+    </section>
+
+    <!-- Products Grid -->
+    <main id="products" class="max-w-7xl mx-auto px-4 pb-20 pt-8 scroll-mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Category: Winter -->
+            <div class="bg-white rounded-2xl p-4 shadow-md border border-cocoa/10 flex flex-col items-center">
+                <span class="bg-blue text-white px-3 py-1 rounded-full text-xs font-bold w-full text-center mb-3">تشكيلة الشتاء</span>
+                <img src=".\assets\Winter Clothing\casca.webp" alt="Winter Overalls" class="w-full h-64 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-lg mb-2 text-center">سالوبيت شتوي وردي "ميني بيبي"</h4>
+                <p class="text-cocoa font-extrabold text-xl mb-4">٤٥٠ ج.م</p>
+                <button class="bg-yellow text-cocoa w-full py-2 rounded-xl font-bold hover:bg-orange transition">أضف للسلة</button>
+            </div>
+
+            <!-- Category: Outdoor -->
+            <div class="bg-white rounded-2xl p-4 shadow-md border border-cocoa/10 flex flex-col items-center">
+                <span class="bg-green text-white px-3 py-1 rounded-full text-xs font-bold w-full text-center mb-3">ملابس الخروج</span>
+                <img src=".\assets\Out Doors Clothing\IMG_20260917_150641_829.webp" alt="Outdoor Suit" class="w-full h-64 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-lg mb-2 text-center">بدلة خروج بيج مع ببيون وتطريز</h4>
+                <p class="text-cocoa font-extrabold text-xl mb-4">٥٢٠ ج.م</p>
+                <button class="bg-yellow text-cocoa w-full py-2 rounded-xl font-bold hover:bg-orange transition">أضف للسلة</button>
+            </div>
+
+            <!-- Category: Pajamas -->
+            <div class="bg-white rounded-2xl p-4 shadow-md border border-cocoa/10 flex flex-col items-center">
+                <span class="bg-pink text-white px-3 py-1 rounded-full text-xs font-bold w-full text-center mb-3">بيجامات مريحة</span>
+                <img src=".\assets\Pajamas\542.3.webp" alt="Pajamas" class="w-full h-64 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-lg mb-2 text-center">طقم بيجاما "أنا أحب أمي" مضلع</h4>
+                <p class="text-cocoa font-extrabold text-xl mb-4">٣٨٠ ج.م</p>
+                <button class="bg-yellow text-cocoa w-full py-2 rounded-xl font-bold hover:bg-orange transition">أضف للسلة</button>
+            </div>
+
+            <!-- Category: Autumn -->
+            <div class="bg-white rounded-2xl p-4 shadow-md border border-cocoa/10 flex flex-col items-center">
+                <span class="bg-orange text-white px-3 py-1 rounded-full text-xs font-bold w-full text-center mb-3">تشكيلة الخريف</span>
+                <img src=".\assets\Autumn Clothing\242_d7c83778-3adc-4083-9a8f-b116a200046c.webp" alt="Autumn Romper" class="w-full h-64 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-lg mb-2 text-center">سلوبت خريفي بنمط أرانب وبالونات</h4>
+                <p class="text-cocoa font-extrabold text-xl mb-4">٣٢٠ ج.م</p>
+                <button class="bg-yellow text-cocoa w-full py-2 rounded-xl font-bold hover:bg-orange transition">أضف للسلة</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cocoa text-cream py-8 text-center border-t-8 border-yellow">
+        <h2 class="text-2xl font-extrabold mb-2">صميدة - KIDS WEAR</h2>
+        <p class="opacity-80">كل طفل يستحق الراحة</p>
+    </footer>
+
+</body>
+</html>
